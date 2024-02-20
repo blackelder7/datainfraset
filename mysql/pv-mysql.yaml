@@ -8,9 +8,9 @@ spec:
   accessModes:
   - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
-  storageClassName: local-storage
+  storageClassName: mysql-storage
   local:
-    path: /workspace/data/kubernetes/pv/mysql
+    path: /data/mysql/pv
   nodeAffinity:
     required:
       nodeSelectorTerms:
